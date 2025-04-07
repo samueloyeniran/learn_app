@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learn_app/screens/employee_screen.dart';
 import 'package:learn_app/test.dart';
 
 void main() {
@@ -14,17 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-      
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const Test(),
+      home: const EmployeeScreen(),
     );
   }
 }
-
-
-
- 
-
-
-
