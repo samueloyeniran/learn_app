@@ -60,7 +60,7 @@ class EmployeeServices {
     List<Employee> allEmployees = [];
 
     try {
-      var response = await http.get(Uri.parse(baseUrl + 'users?page=2'));
+      var response = await http.get(Uri.parse('${baseUrl}users?page=2'));
 
       if (response.statusCode == 200) {
         var decodedData = jsonDecode(response.body);
